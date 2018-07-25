@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      User : {{username}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card class="card1">
+  <iframe [src]="url()" frameborder="0" allowfullscreen class="frame" scrolling=no ></iframe>
+
+  <div *ngIf="isFreePresentation()" id="icons">
+    <ion-icon class="ic" (tap)="firstSlide()" name="skip-backward"></ion-icon>
+    <ion-icon class="ic" (tap)="prevSlide()" name="arrow-dropleft"></ion-icon>
+    <ion-icon class="ic" (tap)="nextSlide()" name="arrow-dropright"></ion-icon>
+    <ion-icon class="ic" block (tap)="lastSlide()" name="skip-forward"></ion-icon>
+  </div>
+<!-- <div *ngFor="let btn of btnArray;let ind = index">
+   <button ion-button [style.background-color]="btn.backgroudColor" (click)="btnActivate(ind)">{{btn.title}}</button>
+</div>
+-->
+  </ion-card>
+</ion-content>
+  <ion-footer>
+
+  <ion-toolbar *ngIf="isFreePresentation()">
+    <ion-row class="presentation_row">
+      <ion-col col-9>
+        <ion-item no-lines>
+          <ion-input class="input" type="text" placeholder="Presentation URL" [(ngModel)]="configUrl" ></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear color="primary" (click)="setPresentationConfig()" [disabled]="configUrl === ''">
+          Set
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

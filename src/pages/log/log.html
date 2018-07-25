@@ -1,0 +1,27 @@
+<ion-content class="background">
+  <br>
+  <br>
+  <img width="40%" height="30%" src="assets/imgs/lock.png">
+<br>
+<br>
+
+   <ion-card>
+        <ion-card-header>
+          LOGIN
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list no-lines>
+              <ion-item>
+                  <ion-label>Username</ion-label>
+                  <ion-input type="text" [(ngModel)]="username" placeholder="UserName"></ion-input>                </ion-item>
+                <ion-item>
+                 <ion-label>password</ion-label>
+                 <ion-input type="password" [(ngModel)]="password" placeholder="Password" ></ion-input>
+              </ion-item>
+           
+              <button ion-button full (click)="joinPresentaion()" [disabled]="username === '' ">login {{ username }}</button>
+            
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

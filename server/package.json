@@ -1,0 +1,20 @@
+{
+  "name": "live.slide.share.server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "ionic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4",
+    "request": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

@@ -1,0 +1,71 @@
+page-presentation-room {
+    .frame{
+        width: 100%;
+        height: 85%;
+    }
+ 
+     .background {
+         background: linear-gradient(#8088A3,#B9B2C1);
+        // color: map-get($colors, primary);
+       // color:($colors, primary, base);
+       //background-color: map-get($bluegray-lightgreen, primary);
+    // }
+    ion-card.card{
+     background:#25243D;
+     width:100%;
+     height:100%;
+     padding-top:0%;
+     padding-bottom:0%;
+     margin-left: 2%;
+     margin-right: 2%;
+     margin-top:0%;
+     //margin: 30%;
+ }
+ margin:3%;
+     .user_name {
+         color: #afafaf;
+     }
+    
+     .presentation_row {
+         background-color: #fff;
+     height: 5%;
+        }
+     .ic
+     {
+     color:color($colors, primary);
+     margin-left : 15%;
+     zoom: 1.5;
+     }
+     #icons{
+         padding-left:5%;
+         margin-top: 5%;
+         margin-bottom: 5%;
+         margin-right:5%;
+         margin-left: 0%;
+     }
+     
+     $colors: (
+         primary: #25243D,
+         secondary: #f5911e,
+         danger: #f53d3d,
+         light: #f4f4f4,
+         dark: #222,
+         favorite: #69BB7B,
+         darkgraycustom: #333333,
+         mediumgraycustom:#666666,
+         lightgraycustom : #b2b2b2
+         );
+ 
+         $bluegray-lightgreen: (
+             primary:         #546e7a,
+             secondary:       #76ff03,
+             primary-light:   #819ca9,
+             primary-dark:    #29434e,
+             secondary-light: #b0ff57,
+             secondary-dark:  #32cb00,
+             primary-text:    #ffffff,
+             secondary-text:  #000000
+           );
+    }
+    
+ }
