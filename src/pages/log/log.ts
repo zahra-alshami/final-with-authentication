@@ -28,22 +28,17 @@ export class LogPage {
     var users=new Array('Student1','Dr.suhel','zahra','ghofran','amani','areej','Student2');
   var x=0;
   users.forEach(element => {
-  if (this.username !== '' && this.username===element&& this.password==='123') {
-   x++;
+  if (this.username !== '') {
+    this.navCtrl.push('PresentationRoomPage',
+    {
+    username: this.username,
+    socket: this.socket
+    });
     }
 
   });
-  if (x==1)
-  {this.navCtrl.push('PresentationRoomPage',
-  {
-  username: this.username,
-  socket: this.socket
-  });
-  x--;
-}
-  else
-  this.showToast('user undefined');
-
+ 
+ 
   }
   showToast(msg) {
   let toast = this.toastCtrl.create({
