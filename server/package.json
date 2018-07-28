@@ -10,9 +10,12 @@
   "author": "ionic",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.0",
+    "connect-mongo": "^2.0.1",
     "express": "^4.16.3",
-    "socket.io": "^2.0.4",
-    "request": "*"
+    "express-session": "^1.15.6",
+    "request": "*",
+    "socket.io": "^2.0.4"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
